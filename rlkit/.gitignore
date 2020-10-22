@@ -1,0 +1,10 @@
+*/*/mjkey.txt
+**/.DS_STORE
+**/*.pyc
+**/*.swp
+rlkit/launchers/config.py
+data/
+scripts/
+templates/
+sbatch/
+index.html
