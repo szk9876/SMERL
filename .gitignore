@@ -1,6 +1,5 @@
 .DS_Store
 rlkit/data
-# rlkit/scripts
 rlkit/templates
 rlkit/sbatch
 rlkit/index.html
