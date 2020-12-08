@@ -38,12 +38,13 @@ run_experiment(..., use_gpu=True)
 # Training
  
 ### HalfCheetah-Goal
-SAC:
+
+#### SAC:
 python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 0.0 --environment-reward-weight 1.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 0
 python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 0.0 --environment-reward-weight 1.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 1
 python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 0.0 --environment-reward-weight 1.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 2
 
-DIAYN:
+#### DIAYN:
 python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 1.0 --environment-reward-weight 0.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 0
 python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 1.0 --environment-reward-weight 0.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 1
 python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 1.0 --environment-reward-weight 0.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 2
