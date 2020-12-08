@@ -4,4 +4,8 @@ This repository contains code for [One Solution is Not All You Need: Few-Shot Ex
 # Installation
 
 
-Instructions to replicate results coming soon.
+# Training
+
+# Evaluation
+
+Plotting scripts for replicating results coming soon.
