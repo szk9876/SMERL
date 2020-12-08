@@ -1,7 +1,7 @@
 # SMERL
 This repository contains code for [One Solution is Not All You Need: Few-Shot Extrapolation via Structured MaxEnt RL](https://arxiv.org/abs/2010.14484). 
 
-## Installation of rlkit
+# Installation
 1. In the rlkit/ directory, copy `config_template.py` to `config.py`:
 ```
 cp rlkit/launchers/config_template.py rlkit/launchers/config.py
@@ -35,8 +35,19 @@ If you are using `doodad` (see below), simply use the `use_gpu` flag:
 run_experiment(..., use_gpu=True)
 ```
 
-
 # Training
+ 
+### HalfCheetah-Goal
+SAC:
+python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 0.0 --environment-reward-weight 1.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 0
+python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 0.0 --environment-reward-weight 1.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 1
+python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 0.0 --environment-reward-weight 1.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 2
+
+DIAYN:
+python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 1.0 --environment-reward-weight 0.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 0
+python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 1.0 --environment-reward-weight 0.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 1
+python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 1.0 --environment-reward-weight 0.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 2
+
 
 # Evaluation
 
