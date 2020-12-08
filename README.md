@@ -37,10 +37,10 @@ run_experiment(..., use_gpu=True)
 
 # Training
  
-### HalfCheetah-Goal
+## HalfCheetah-Goal
 
 
-#### SAC:
+### SAC:
 
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 0
 
@@ -49,7 +49,7 @@ python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-we
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 2
 
 
-#### DIAYN:
+### DIAYN:
 
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 0.0 --unsupervised-reward-weight 1.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 0
 
@@ -58,7 +58,7 @@ python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-we
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 0.0 --unsupervised-reward-weight 1.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 2
 
 
-#### SAC+DIAYN:
+### SAC+DIAYN:
 
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.5 --num_skills 5 --env HalfCheetahGoalEnv-v1 --subopt-return-threshold -10000000.0 --seed 0
 
@@ -67,7 +67,7 @@ python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-we
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.5 --num_skills 5 --env HalfCheetahGoalEnv-v1 --subopt-return-threshold -10000000.0 --seed 2
 
 
-#### SMERL:
+### SMERL:
 
 python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --unsupervised-reward-weight 10.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --subopt-return-threshold -100.0 --seed 0
 
@@ -76,10 +76,10 @@ python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --un
 python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --unsupervised-reward-weight 10.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --subopt-return-threshold -100.0 --seed 2
 
 
-### Walker-Velocity
+## Walker-Velocity
 
 
-#### SAC:
+### SAC:
 
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.0 --num_skills 5 --env Walker2dVelocityEnv-v1 --seed 0
 
@@ -88,7 +88,7 @@ python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-we
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.0 --num_skills 5 --env Walker2dVelocityEnv-v1 --seed 2
 
 
-#### DIAYN:
+### DIAYN:
 
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 0.0 --unsupervised-reward-weight 1.0 --num_skills 5 --env Walker2dVelocityEnv-v1 --seed 0
 
@@ -97,7 +97,7 @@ python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-we
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 0.0 --unsupervised-reward-weight 1.0 --num_skills 5 --env Walker2dVelocityEnv-v1 --seed 2
 
 
-#### SAC+DIAYN:
+### SAC+DIAYN:
 
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.5 --num_skills 5 --env Walker2dVelocityEnv-v1 --subopt-return-threshold -10000000.0 --seed 0
 
@@ -106,7 +106,7 @@ python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-we
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.5 --num_skills 5 --env Walker2dVelocityEnv-v1 --subopt-return-threshold -10000000.0 --seed 2
 
 
-#### SMERL:
+### SMERL:
 
 python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --unsupervised-reward-weight 10.0 --num_skills 5 --env Walker2dVelocityEnv-v1 --subopt-return-threshold 790 --seed 0
 
@@ -115,10 +115,10 @@ python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --un
 python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --unsupervised-reward-weight 10.0 --num_skills 5 --env Walker2dVelocityEnv-v1 --subopt-return-threshold 790 --seed 2
 
 
-### Hopper-Velocity
+## Hopper-Velocity
 
 
-#### SAC:
+### SAC:
 
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.0 --num_skills 5 --env HopperVelocityEnv-v1 --seed 0
 
@@ -127,7 +127,7 @@ python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-we
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.0 --num_skills 5 --env HopperVelocityEnv-v1 --seed 2
 
 
-#### DIAYN:
+### DIAYN:
 
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 0.0 --unsupervised-reward-weight 1.0 --num_skills 5 --env HopperVelocityEnv-v1 --seed 0
 
@@ -136,7 +136,7 @@ python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-we
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 0.0 --unsupervised-reward-weight 1.0 --num_skills 5 --env HopperVelocityEnv-v1 --seed 2
 
 
-#### SAC+DIAYN:
+### SAC+DIAYN:
 
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.5 --num_skills 5 --env HopperVelocityEnv-v1 --subopt-return-threshold -10000000.0 --seed 0
 
@@ -145,7 +145,7 @@ python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-we
 python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.5 --num_skills 5 --env HopperVelocityEnv-v1 --subopt-return-threshold -10000000.0 --seed 2
 
 
-#### SMERL:
+### SMERL:
 
 python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --unsupervised-reward-weight 10.0 --num_skills 5 --env HopperVelocityEnv-v1 --subopt-return-threshold 600 --seed 0
 
