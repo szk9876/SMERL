@@ -40,16 +40,72 @@ run_experiment(..., use_gpu=True)
 ### HalfCheetah-Goal
 
 #### SAC:
-python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 0.0 --environment-reward-weight 1.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 0
-python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 0.0 --environment-reward-weight 1.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 1
-python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 0.0 --environment-reward-weight 1.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 2
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 0
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 1
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 2
 
 #### DIAYN:
-python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 1.0 --environment-reward-weight 0.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 0
-python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 1.0 --environment-reward-weight 0.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 1
-python examples/url/run_smerl_experiment.py --unsupervised-reward-weight 1.0 --environment-reward-weight 0.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 2
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 0.0 --unsupervised-reward-weight 1.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 0
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 0.0 --unsupervised-reward-weight 1.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 1
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 0.0 --unsupervised-reward-weight 1.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --seed 2
+
+#### SAC+DIAYN:
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.5 --num_skills 5 --env HalfCheetahGoalEnv-v1 --subopt-return-threshold -10000000.0 --seed 0
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.5 --num_skills 5 --env HalfCheetahGoalEnv-v1 --subopt-return-threshold -10000000.0 --seed 1
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.5 --num_skills 5 --env HalfCheetahGoalEnv-v1 --subopt-return-threshold -10000000.0 --seed 2
+
+#### SMERL:
+python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --unsupervised-reward-weight 10.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --subopt-return-threshold -100.0 --seed 0
+python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --unsupervised-reward-weight 10.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --subopt-return-threshold -100.0 --seed 1
+python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --unsupervised-reward-weight 10.0 --num_skills 5 --env HalfCheetahGoalEnv-v1 --subopt-return-threshold -100.0 --seed 2
+
+
+### Walker-Velocity
+
+#### SAC:
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.0 --num_skills 5 --env Walker2dVelocityEnv-v1 --seed 0
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.0 --num_skills 5 --env Walker2dVelocityEnv-v1 --seed 1
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.0 --num_skills 5 --env Walker2dVelocityEnv-v1 --seed 2
+
+#### DIAYN:
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 0.0 --unsupervised-reward-weight 1.0 --num_skills 5 --env Walker2dVelocityEnv-v1 --seed 0
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 0.0 --unsupervised-reward-weight 1.0 --num_skills 5 --env Walker2dVelocityEnv-v1 --seed 1
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 0.0 --unsupervised-reward-weight 1.0 --num_skills 5 --env Walker2dVelocityEnv-v1 --seed 2
+
+#### SAC+DIAYN:
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.5 --num_skills 5 --env Walker2dVelocityEnv-v1 --subopt-return-threshold -10000000.0 --seed 0
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.5 --num_skills 5 --env Walker2dVelocityEnv-v1 --subopt-return-threshold -10000000.0 --seed 1
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.5 --num_skills 5 --env Walker2dVelocityEnv-v1 --subopt-return-threshold -10000000.0 --seed 2
+
+#### SMERL:
+python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --unsupervised-reward-weight 10.0 --num_skills 5 --env Walker2dVelocityEnv-v1 --subopt-return-threshold 790 --seed 0
+python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --unsupervised-reward-weight 10.0 --num_skills 5 --env Walker2dVelocityEnv-v1 --subopt-return-threshold 790 --seed 1
+python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --unsupervised-reward-weight 10.0 --num_skills 5 --env Walker2dVelocityEnv-v1 --subopt-return-threshold 790 --seed 2
+
+
+### Hopper-Velocity
+
+#### SAC:
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.0 --num_skills 5 --env HopperVelocityEnv-v1 --seed 0
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.0 --num_skills 5 --env HopperVelocityEnv-v1 --seed 1
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.0 --num_skills 5 --env HopperVelocityEnv-v1 --seed 2
+
+#### DIAYN:
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 0.0 --unsupervised-reward-weight 1.0 --num_skills 5 --env HopperVelocityEnv-v1 --seed 0
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 0.0 --unsupervised-reward-weight 1.0 --num_skills 5 --env HopperVelocityEnv-v1 --seed 1
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 0.0 --unsupervised-reward-weight 1.0 --num_skills 5 --env HopperVelocityEnv-v1 --seed 2
+
+#### SAC+DIAYN:
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.5 --num_skills 5 --env HopperVelocityEnv-v1 --subopt-return-threshold -10000000.0 --seed 0
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.5 --num_skills 5 --env HopperVelocityEnv-v1 --subopt-return-threshold -10000000.0 --seed 1
+python examples/url/run_smerl_experiment.py --algo diayn --environment-reward-weight 1.0 --unsupervised-reward-weight 0.5 --num_skills 5 --env HopperVelocityEnv-v1 --subopt-return-threshold -10000000.0 --seed 2
+
+#### SMERL:
+python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --unsupervised-reward-weight 10.0 --num_skills 5 --env HopperVelocityEnv-v1 --subopt-return-threshold 600 --seed 0
+python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --unsupervised-reward-weight 10.0 --num_skills 5 --env HopperVelocityEnv-v1 --subopt-return-threshold 600 --seed 1
+python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --unsupervised-reward-weight 10.0 --num_skills 5 --env HopperVelocityEnv-v1 --subopt-return-threshold 600 --seed 2
 
 
 # Evaluation
 
-Plotting scripts for replicating results coming soon.
+Plotting scripts for reproducing plots coming soon.
