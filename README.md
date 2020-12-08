@@ -2,11 +2,11 @@
 This repository contains code for [One Solution is Not All You Need: Few-Shot Extrapolation via Structured MaxEnt RL](https://arxiv.org/abs/2010.14484). 
 
 # Installation
-1. In the rlkit/ directory, copy `config_template.py` to `config.py`:
+1. In the rlkit directory, copy `config_template.py` to `config.py`:
 ```
 cp rlkit/launchers/config_template.py rlkit/launchers/config.py
 ```
-2. Install and use the included Ananconda environment
+2. In the rlkit directory, install and use the included Ananconda environment
 ```
 $ conda env create -f environment/[linux-cpu|linux-gpu|mac]-env.yml
 $ source activate rlkit
