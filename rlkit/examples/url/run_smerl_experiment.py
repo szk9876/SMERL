@@ -146,7 +146,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Set the seed for the experiment.
-    # set_seed(args.seed)   
+    set_seed(args.seed)   
 
     if args.unsupervised_reward_weight == 0.:
         algo = 'wrapped_env'
