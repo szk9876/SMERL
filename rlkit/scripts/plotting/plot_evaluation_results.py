@@ -82,7 +82,7 @@ for env_name in env_names:
 		plt.plot(x, diayn_mean, label='DIAYN', marker='+', linewidth=2)
 		plt.fill_between(x, diayn_mean-diayn_error, diayn_mean+diayn_error, alpha=alpha)
 
-		# plt.legend(fontsize=20)
+		plt.legend(fontsize=10)
 		plt.xticks(fontsize=14)
 		plt.yticks(fontsize=14)
 
