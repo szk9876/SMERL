@@ -156,4 +156,7 @@ python examples/url/run_smerl_experiment.py --environment-reward-weight 1.0 --un
 
 # Evaluation
 
-Plotting scripts for reproducing plots coming soon.
+Code for running evaluating the trained agents on obstacle, force, and motor failure perturbations is coming soon!
+
+# Plotting
+Navigate to rlkit/scripts/plotting and run plot_evaluation_results.py.
